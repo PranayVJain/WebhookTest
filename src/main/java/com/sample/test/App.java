@@ -13,6 +13,19 @@ public class App
     {
         try {
 			FileInputStream fi = new FileInputStream("");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+    }
+    
+    public void test( String[] args )
+    {
+        try {
+			FileInputStream fi = new FileInputStream("");
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
