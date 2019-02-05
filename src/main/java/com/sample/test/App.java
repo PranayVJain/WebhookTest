@@ -14,4 +14,12 @@ public class App
         System.out.println("Issue line is deleted");
         
     }
+    
+    public void mainDup( String[] args ){
+      try {
+                        FileInputStream fi = new FileInputStream("");
+                } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                }
+    }
 }
