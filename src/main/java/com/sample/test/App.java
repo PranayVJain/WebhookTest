@@ -1,22 +1,20 @@
 package com.sample.test;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 /**
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        try {
-			FileInputStream fi = new FileInputStream("");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+public class App {
+
+	public boolean isPalindrome(String inputString) {
+		if (inputString.length() == 0) {
+			return true;
+		} else {
+			char firstChar = inputString.charAt(0);
+			char lastChar = inputString.charAt(inputString.length() - 1);
+			String mid = inputString.substring(1, inputString.length() - 1);
+			return (firstChar == lastChar) && isPalindrome(mid);
 		}
-        
-    }
+	}
 }
